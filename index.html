@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Registration</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amita&display=swap" rel="stylesheet">
+  <script src='https://www.google.com/recaptcha/api.js'></script>
+
+</head>
+<body>
+  <div class="box">
+    <div class="forms-wrap">
+      <div class="contact">
+        <div class="alert">Registered succesfully!</div>
+          <form class="sign-in-form" id="contactForm">
+            <div class="mobile">
+              <div class="carousel">
+                <h1 class="head">संरचना</h1>
+                <img src="Assets\photoshop-history-removebg-preview.png" class="ps-lap" alt="" />
+              <!-- <img src="Assets\Homeimg.png" class="image" alt="" /> -->
+              </div>
+            </div>
+
+            <div class="heading">
+              <img class="logo" src="Assets\logo.png" alt="">
+            </div>
+            <div class="actual-form">
+              <div class="input-wrap">
+                <b><span class="formerror"></span></b>
+                <input type="text" name="name" class="input-field" id="name">
+                <label for="name">Name<span class="required">*</span></label>
+              </div>
+              <div class="input-wrap">
+                <b><span class="formerror"></span></b>
+                <input type="email" pattern=".+@akgec.ac.in" name="email" class="input-field" id="email">
+                <label for="email">Email<span class="required">*</span></label>
+              </div>
+              <div class="input-wrap">
+                <b><span class="formerror"></span></b>
+                <input type="number" name="stdno" class="input-field" id="studentno">
+                <label for="stdno">Student No.<span class="required">*</span></label>
+              </div>
+              <div class="input-wrap">
+                <b><span class="formerror"></span></b>
+                <input type="number" name="UnvNo" class="input-field" id="unvNo">
+                <label for="stdno">University Roll No.<span class="required">*</span></label>
+              </div>
+              <div class="input-wrap">
+                <select name="year" class="input-field" id="year" required>
+                  <option value="" disabled selected hidden>Year<span class="required">*</span></option>
+                  <option value="2">2nd</option>
+                </select>
+              </div>
+              <div class="input-wrap">
+                <select name="branch" class="input-field" id="branch" >
+                  <option value="" disabled selected >Branch<span class="required">*</span></option>
+                  <option value="CSE">CSE</option>
+                  <option value="CS">CS</option>
+                  <option value="AIML">CSE(AI&ML)</option>
+                  <option value="DS">CS(DS)</option>
+                  <option value="IT">IT</option>
+                  <option value="CSIT">CSIT</option>
+                  <option value="ECE">ECE</option>
+                  <option value="EN">EN</option>
+                  <option value="ME">ME</option>
+                  <option value="CVL">CIVIL</option>
+                </select>
+              </div>
+              <div class="input-wrap">
+                <select name="section" class="input-field" id="section" >
+                  <option value="" disabled selected hidden>Section<span class="required">*</span></option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                </select>
+              </div>
+              <div class="input-wrap">
+                <b><span class="formerror"></span></b>
+                <input type="tel" pattern="^\d{10}" name="phno" class="input-field" id="phone">
+                <label for="phone">Contact No.<span class="required">*</span></label>
+              </div>
+              <div class="input-wrap">
+                <select name="gender" class="input-field" id="gender" >
+                  <option value="" disabled selected hidden>Gender<span class="required">*</span></option>
+                  <option value="male">Male</option>
+                  <option value="female">Female</option>
+                </select>
+              </div>
+              <div class="input-wrap">
+                <select name="hostel" class="input-field" id="ishosteller" >
+                  <option value="" disabled selected hidden>Are you a Hosteller?<span class="required">*</span></option>
+                  <option value="YES">YES</option>
+                  <option value="NO">NO</option>
+                </select>
+              </div>
+              <div class="captcha">
+                <div class="g-recaptcha" data-sitekey="6Lefz94hAAAAAB2fbexzu4urnvntXvJmyopOcYa1">
+                </div>
+              </div>  
+              <p class="full">
+                <button type="submit" class="register-btn">Submit</button>
+              </p>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="bottom">
+        <div class="carousel">
+            <h1 class="">संरचना</h1>
+            <!-- <img src="Assets\Homeimg.png" class="image" alt="" /> -->
+            <img src="Assets\photoshop-history-removebg-preview.png" class="ps-lap" alt="" />
+        </div>
+      </div>
+    </div>
+    
+    <script src="app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
